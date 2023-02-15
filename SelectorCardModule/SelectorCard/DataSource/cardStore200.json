@@ -1,0 +1,27 @@
+{
+	"payment":{
+		"title": "Cobraremos a tu Rappicard terminada en:",
+		"card_last_four": "***2122",
+		"card_icon" : "https://s3.us-west-2.amazonaws.com/rappipay/credit-card/rda/credit-card/rda/black_card_icon.png"
+	},
+	"products":[
+		{
+			"id":123456,
+			"title":"Onix",
+			"front_image":"https://s3.us-west-2.amazonaws.com/rappipay/credit-card/rda/credit-card/rda/product_front_onix.png",
+			"back_image":"https://s3.us-west-2.amazonaws.com/rappipay/credit-card/rda/credit-card/rda/product_back_onix.png",
+			"description":"inspirada en el color que combina con todo, elegancia y estilo",
+			"replacement_cost":"$19.900",
+			"tag":"🔥 ¡Nueva! 🔥"
+		},
+		{
+			"id":111113,
+			"title":"Blue sky",
+			"front_image":"https://s3.us-west-2.amazonaws.com/rappipay/credit-card/rda/credit-card/rda/product_front_onix.png",
+			"back_image":"https://s3.us-west-2.amazonaws.com/rappipay/credit-card/rda/credit-card/rda/product_back_onix.png",
+			"description":"inspirada en el coloazul del cielo",
+			"replacement_cost":"$19.900"
+		}
+	],
+   "button_copy":"Pedir ahora"
+}

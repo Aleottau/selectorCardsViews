@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CardsViewCell" customModule="SelectorCardModule" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="444"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="444"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0uC-XV-tWP">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="286.33333333333331"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhM-hv-Ao3">
+                        <rect key="frame" x="97" y="296.33333333333331" width="56" height="35.666666666666686"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="arrow.2.squarepath" catalog="system"/>
+                        <connections>
+                            <action selector="buttonFlipAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="o2t-Og-cFY"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$19.900" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzZ-fz-Wch">
+                        <rect key="frame" x="89" y="394.66666666666669" width="72" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Natural Card" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Oj-DO-Xys">
+                        <rect key="frame" x="45.666666666666671" y="335.66666666666669" width="158.66666666666663" height="52"/>
+                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="25"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="0uC-XV-tWP" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="2yk-OG-0XH"/>
+                <constraint firstItem="0uC-XV-tWP" firstAttribute="centerX" secondItem="PhM-hv-Ao3" secondAttribute="centerX" id="4rj-vx-Jr4"/>
+                <constraint firstItem="6Oj-DO-Xys" firstAttribute="height" secondItem="0uC-XV-tWP" secondAttribute="height" multiplier="0.181818" id="6hJ-45-DFP"/>
+                <constraint firstItem="0uC-XV-tWP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7TI-ak-Z8C"/>
+                <constraint firstItem="0uC-XV-tWP" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.644895" id="A5M-mQ-Usw"/>
+                <constraint firstItem="PhM-hv-Ao3" firstAttribute="top" secondItem="0uC-XV-tWP" secondAttribute="bottom" constant="10" id="QRb-jc-EFT"/>
+                <constraint firstItem="PhM-hv-Ao3" firstAttribute="height" secondItem="0uC-XV-tWP" secondAttribute="height" multiplier="0.124848" id="XgT-ap-zBO"/>
+                <constraint firstItem="0uC-XV-tWP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Yhk-O4-iva"/>
+                <constraint firstItem="6Oj-DO-Xys" firstAttribute="centerX" secondItem="0uC-XV-tWP" secondAttribute="centerX" id="dSc-oY-nr1"/>
+                <constraint firstItem="bzZ-fz-Wch" firstAttribute="centerX" secondItem="0uC-XV-tWP" secondAttribute="centerX" id="fRN-nO-G0B"/>
+                <constraint firstItem="bzZ-fz-Wch" firstAttribute="top" secondItem="6Oj-DO-Xys" secondAttribute="bottom" constant="7" id="gV8-PE-bXz"/>
+                <constraint firstItem="bzZ-fz-Wch" firstAttribute="height" secondItem="0uC-XV-tWP" secondAttribute="height" multiplier="0.0836364" id="oSf-uC-VVF"/>
+                <constraint firstItem="bzZ-fz-Wch" firstAttribute="top" secondItem="6Oj-DO-Xys" secondAttribute="bottom" constant="7" id="q1M-Mg-nVp"/>
+                <constraint firstItem="6Oj-DO-Xys" firstAttribute="top" secondItem="PhM-hv-Ao3" secondAttribute="bottom" constant="3.6699999999999999" id="zNh-Rc-cFf"/>
+            </constraints>
+            <size key="customSize" width="267" height="444"/>
+            <connections>
+                <outlet property="cardImage" destination="0uC-XV-tWP" id="wmj-do-jBI"/>
+                <outlet property="priceCardLabel" destination="bzZ-fz-Wch" id="lSo-Pm-Tk1"/>
+                <outlet property="titleCardLabel" destination="6Oj-DO-Xys" id="b8t-70-lw8"/>
+            </connections>
+            <point key="canvasLocation" x="135.87786259541986" y="103.52112676056339"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.2.squarepath" catalog="system" width="32" height="32"/>
+    </resources>
+</document>
